@@ -33,7 +33,7 @@ const LeftSidebar = () => {
             )}
           >
             <Image src={item.imgURL} width={24} height={24} alt={item.route} />
-            {item.label}
+            <p className="hidden lg:block">{item.label}</p>
           </Link>
         ))}
 

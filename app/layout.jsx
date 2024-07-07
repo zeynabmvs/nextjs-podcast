@@ -6,6 +6,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Podcast App",
   description: "Listen and share podcasts",
+  icons: {
+    icon: "/icons/logo.svg",
+  },
 };
 
 export default function RootLayout({ children }) {
