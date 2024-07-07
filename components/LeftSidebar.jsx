@@ -16,9 +16,9 @@ const LeftSidebar = () => {
           href="/"
           className="flex cursor-pointer items-center gap-1 pb-10 max-lg:justify-center"
         >
-          <Image src="/icons/logo.svg" width={23} height={27} alt="logo" />
+          <Image src="/logo.png" width={40} height={40} alt="logo" />
           <h1 className="text-24 font-extrabold text-white max-lg:hidden">
-            Podcastr
+            Podcast
           </h1>
         </Link>
 
@@ -28,7 +28,7 @@ const LeftSidebar = () => {
             key={index}
             className={clsx("flex gap-3 items-center py-4 max-lg:px-4 justify-center lg:justify-start", 
               {
-                'bg-nav-focus border-r-4 border-orange-1' : pathname === item.route
+                'bg-nav-focus border-r-4 border-primary-1' : pathname === item.route
               }
             )}
           >

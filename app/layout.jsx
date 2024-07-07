@@ -7,7 +7,7 @@ export const metadata = {
   title: "Podcast App",
   description: "Listen and share podcasts",
   icons: {
-    icon: "/icons/logo.svg",
+    icon: "/logo.png",
   },
 };
 
