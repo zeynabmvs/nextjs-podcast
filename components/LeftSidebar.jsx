@@ -1,8 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { sidebarLinks } from "@/constants/index";
+import { usePathname } from "next/navigation";
+import { clsx } from "clsx";
 
 const LeftSidebar = () => {
+  const pathname = usePathname();
+
   return (
     <aside class="bg-black-1 w-1/6 h-full p-4">
       <nav>
@@ -20,7 +26,11 @@ const LeftSidebar = () => {
           <Link
             href={item.route}
             key={index}
-            className="flex gap-3 items-center py-4 max-lg:px-4 justify-center lg:justify-start"
+            className={clsx("flex gap-3 items-center py-4 max-lg:px-4 justify-center lg:justify-start", 
+              {
+                'bg-nav-focus border-r-4 border-orange-1' : pathname === item.route
+              }
+            )}
           >
             <Image src={item.imgURL} width={24} height={24} alt={item.route} />
             {item.label}

@@ -9,11 +9,12 @@ export const sidebarLinks = [
       route: "/explore",
       label: "Explore",
     },
-    {
-      imgURL: "/icons/microphone.svg",
-      route: "/create-podcast",
-      label: "Create Podcast",
-    },
+    // TODO: uncomment
+    // {
+    //   imgURL: "/icons/microphone.svg",
+    //   route: "/create-podcast",
+    //   label: "Create Podcast",
+    // },
   ];
   
   export const voiceDetails = [
